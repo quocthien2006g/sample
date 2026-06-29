@@ -1,0 +1,167 @@
+/* ---------- General ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ---------- Skip Link ---------- */
+
+.skip{
+    position:absolute;
+    left:-9999px;
+    top:10px;
+    background:#ffffff;
+    color:#000;
+    padding:10px;
+    text-decoration:none;
+}
+
+.skip:focus{
+    left:20px;
+}
+
+/* ---------- Header ---------- */
+
+header{
+    background:#2c5f2d;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* ---------- Navigation ---------- */
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:20px;
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:8px 15px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#97bc62;
+    color:black;
+}
+
+/* ---------- Main ---------- */
+
+main{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+p{
+    margin-bottom:20px;
+}
+
+/* ---------- Hero ---------- */
+
+.hero img{
+    width:100%;
+}
+
+/* ---------- Images ---------- */
+
+img{
+    width:100%;
+    border:3px solid #2c5f2d;
+    padding:8px;
+    border-radius:12px;
+}
+
+/* ---------- Grid ---------- */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+/* ---------- Gallery Flex ---------- */
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.gallery img{
+    width:300px;
+}
+
+/* ---------- nth-child ---------- */
+
+.gallery img:nth-child(even){
+    border-radius:50%;
+}
+
+/* ---------- Hover ---------- */
+
+.gallery img:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+/* ---------- Form ---------- */
+
+form{
+    max-width:500px;
+    margin-top:20px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #888;
+    border-radius:5px;
+}
+
+button{
+    background:#2c5f2d;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#97bc62;
+    color:black;
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#2c5f2d;
+    color:white;
+    margin-top:30px;
+}
